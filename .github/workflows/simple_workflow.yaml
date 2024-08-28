@@ -18,7 +18,7 @@ pull_request :
             cache: maven
 
         - name: build with maven
-          run: mvn -B package --file pom.xml
+          run: mvn -B package --file file.txt
 
         - name: archive artifact
           uses: actions/upload-artifacts@v2
